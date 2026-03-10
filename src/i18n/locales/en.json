@@ -1,0 +1,18 @@
+{
+  "navbar": {
+    "home": "Home",
+    "originals": "Originals",
+    "prints": "Prints",
+    "commissions": "Commissions",
+    "about": "About",
+    "contact": "Contact",
+    "language": "Language",
+    "english": "EN",
+    "russian": "RU"
+  },
+  "home": {
+    "title": "Alisi Art",
+    "shopOriginals": "Shop Original Paintings",
+    "shopPrints": "Shop All Prints"
+  }
+}

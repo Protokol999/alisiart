@@ -1,0 +1,18 @@
+{
+  "navbar": {
+    "home": "Главная",
+    "originals": "Оригиналы",
+    "prints": "Принты",
+    "commissions": "Заказы",
+    "about": "Обо мне",
+    "contact": "Контакты",
+    "language": "Язык",
+    "english": "EN",
+    "russian": "RU"
+  },
+  "home": {
+    "title": "Alisi Art",
+    "shopOriginals": "Купить оригинальные картины",
+    "shopPrints": "Смотреть все принты"
+  }
+}

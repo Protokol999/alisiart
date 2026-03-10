@@ -1,0 +1,139 @@
+.home {
+  min-height: 100vh;
+
+  &__hero {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  &__title {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: min(92vw, 1100px);
+    margin: 0;
+    font-size: clamp(56px, 12vw, 160px);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 0.95;
+  }
+
+  &__buttons {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: min(92vw, 820px);
+    gap: 20px;
+    z-index: 1;
+
+    &-button {
+      padding: 12px 24px;
+      min-width: 240px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #000000;
+      border-radius: 20px;
+      background-color: #80ade2;
+      border: none;
+      cursor: pointer;
+      transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+    }
+
+    &-button:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  &__gallery {
+    padding: 48px 0 72px;
+    background: #f5f5f3;
+  }
+}
+
+@media (max-width: 1200px) {
+  .home {
+    &__title {
+      top: 38%;
+    }
+
+    &__buttons {
+      top: 76%;
+      gap: 16px;
+
+      &-button {
+        min-width: 220px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    &__hero {
+      min-height: 100svh;
+    }
+
+    &__image {
+      height: 100svh;
+    }
+
+    &__title {
+      top: 38%;
+      width: 88vw;
+      font-size: clamp(44px, 15vw, 88px);
+    }
+
+    &__buttons {
+      top: 76%;
+      width: 88vw;
+      gap: 12px;
+
+      &-button {
+        width: 100%;
+        min-width: 0;
+        padding: 14px 18px;
+        font-size: 16px;
+      }
+    }
+
+    &__gallery {
+      padding: 24px 0 40px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    &__title {
+      top: 40%;
+      font-size: clamp(36px, 15vw, 64px);
+    }
+
+    &__buttons {
+      top: 74%;
+
+      &-button {
+        font-size: 14px;
+        border-radius: 16px;
+      }
+    }
+  }
+}
