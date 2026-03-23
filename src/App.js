@@ -6,8 +6,8 @@ import { Commissions } from './pages/Commisions/Commissions';
 import { Contact } from './pages/Contact/Contact';
 import { Home } from './pages/Home/Home';
 import { Originals } from './pages/Originals/Originals';
+import { Paintings } from './pages/Paintings/Paintings';
 import { Prints } from './pages/Prints/Prints';
-
 function App() {
   return (
     <div className='App'>
@@ -20,6 +20,7 @@ function App() {
           <Route path='/commissions' element={<Commissions />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/paintings/:id' element={<Paintings />} />
         </Routes>
       </BrowserRouter>
     </div>

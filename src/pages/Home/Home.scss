@@ -3,7 +3,7 @@
 
   &__hero {
     position: relative;
-    min-height: 100vh;
+    // убрали min-height чтобы не было зазора
   }
 
   &__image {
@@ -11,7 +11,6 @@
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    z-index: -1;
   }
 
   &__title {
@@ -54,16 +53,64 @@
       transition:
         background-color 0.3s ease,
         transform 0.3s ease;
-    }
 
-    &-button:hover {
-      transform: translateY(-2px);
+      &:hover {
+        transform: translateY(-2px);
+      }
     }
   }
 
   &__gallery {
     padding: 48px 0 72px;
     background: #f5f5f3;
+  }
+
+  &__about {
+    background-color: #fed16d;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+
+    &-image {
+      width: 45%;
+      object-fit: cover;
+      border-radius: 20px;
+      flex-shrink: 0;
+    }
+
+    &-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &-title {
+        font-size: clamp(28px, 6vw, 90px);
+        margin-bottom: 12px;
+        text-align: center;
+      }
+
+      &-button {
+        margin-top: 20px;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+        border-radius: 20px;
+        background-color: #80ade2;
+        border: none;
+        cursor: pointer;
+        transition:
+          background-color 0.3s ease,
+          transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-2px);
+        }
+      }
+    }
   }
 }
 
@@ -87,10 +134,6 @@
 
 @media (max-width: 768px) {
   .home {
-    &__hero {
-      min-height: 100svh;
-    }
-
     &__image {
       height: 100svh;
     }
@@ -117,6 +160,33 @@
     &__gallery {
       padding: 24px 0 40px;
     }
+
+    &__about {
+      flex-direction: column;
+      padding: 32px 20px;
+      gap: 24px;
+
+      &-image {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+      }
+
+      &-text {
+        width: 100%;
+
+        &-title {
+          font-size: clamp(28px, 8vw, 56px);
+          text-align: center;
+        }
+
+        &-button {
+          font-size: 16px;
+          width: 100%;
+          max-width: 320px;
+        }
+      }
+    }
   }
 }
 
@@ -131,8 +201,23 @@
       top: 74%;
 
       &-button {
-        font-size: 14px;
+        font-size: 12px;
         border-radius: 16px;
+      }
+    }
+
+    &__about {
+      padding: 24px 16px;
+
+      &-text {
+        &-title {
+          font-size: clamp(22px, 7vw, 36px);
+        }
+
+        &-button {
+          font-size: 14px;
+          padding: 10px 20px;
+        }
       }
     }
   }

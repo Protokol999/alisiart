@@ -8,7 +8,7 @@ import {
   picture6,
   picture7,
   picture8
-} from '../../assets/index';
+} from '../../assets/images/index';
 import './Pictures.scss';
 
 const pictures = [

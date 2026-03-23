@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { bigSea } from '../../assets/index';
+import { alina, bigSea } from '../../assets/images/index';
 import { Pictures } from '../../components/Pictures/Pictures';
 import { useI18n } from '../../i18n';
 import './Home.scss';
@@ -31,6 +31,18 @@ export const Home = () => {
 
       <div className='home__gallery'>
         <Pictures />
+      </div>
+      <div className='home__about'>
+        <img className='home__about-image' src={alina} alt='Alina' />
+        <div className='home__about-text'>
+          <h2 className='home__about-text-title'>{t('home.aboutTitle')}</h2>
+          <button
+            className='home__about-text-button'
+            onClick={() => navigate('about')}
+          >
+            {t('home.aboutText')}
+          </button>
+        </div>
       </div>
     </div>
   );
