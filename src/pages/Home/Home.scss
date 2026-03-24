@@ -1,9 +1,9 @@
 .home {
   min-height: 100vh;
+  background: #c0d7dd;
 
   &__hero {
     position: relative;
-    // убрали min-height чтобы не было зазора
   }
 
   &__image {
@@ -18,11 +18,12 @@
     top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    font-family: 'Bodoni';
     width: min(92vw, 1100px);
     margin: 0;
     font-size: clamp(56px, 12vw, 160px);
-    font-weight: bold;
+    color: #c0d7dd;
+    font-weight: 900;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
     line-height: 0.95;
@@ -41,13 +42,14 @@
     z-index: 1;
 
     &-button {
+      font-family: 'Calibri', sans-serif;
       padding: 12px 24px;
       min-width: 240px;
       font-size: 20px;
       font-weight: 500;
-      color: #000000;
+      color: #fff;
       border-radius: 20px;
-      background-color: #80ade2;
+      background-color: #0e3a3d;
       border: none;
       cursor: pointer;
       transition:
@@ -62,11 +64,10 @@
 
   &__gallery {
     padding: 48px 0 72px;
-    background: #f5f5f3;
   }
 
   &__about {
-    background-color: #fed16d;
+    background-color: #6fa0a7;
     padding: 40px;
     display: flex;
     flex-direction: row;
@@ -88,7 +89,8 @@
 
       &-title {
         font-size: clamp(28px, 6vw, 90px);
-        margin-bottom: 12px;
+        font-family: 'Bodoni';
+        color: #0e3a3d;
         text-align: center;
       }
 
@@ -97,9 +99,10 @@
         padding: 12px 24px;
         font-size: 18px;
         font-weight: 500;
-        color: #000000;
+        color: #fff;
+        font-family: 'Calibri', sans-serif;
         border-radius: 20px;
-        background-color: #80ade2;
+        background-color: #0e3a3d;
         border: none;
         cursor: pointer;
         transition:
@@ -109,6 +112,67 @@
         &:hover {
           transform: translateY(-2px);
         }
+      }
+    }
+  }
+  &__youtube {
+    display: flex;
+    justify-content: center;
+    padding: 60px 24px;
+
+    iframe {
+      width: min(100%, 800px);
+      height: 450px;
+      border-radius: 16px;
+    }
+  }
+  &__custom {
+    position: relative;
+
+    &--image {
+      display: block;
+      width: 100%;
+      height: 800px;
+      object-fit: cover;
+    }
+
+    h2 {
+      position: absolute;
+      left: 5%;
+      color: #d1e9ef;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+
+      &:first-of-type {
+        top: 35%;
+        font-size: clamp(28px, 7vw, 54px);
+      }
+
+      &:last-of-type {
+        top: 45%;
+        font-size: clamp(30px, 8vw, 60px);
+      }
+    }
+    button {
+      position: absolute;
+      left: 5%;
+      top: 60%;
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: clamp(20px, 5vw, 40px);
+      font-weight: 400;
+      color: #fff;
+      font-family: 'Calibri', sans-serif;
+      border-radius: 30px;
+      background-color: #0e3a3d;
+      border: none;
+      cursor: pointer;
+      transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
       }
     }
   }

@@ -12,3 +12,6 @@ export { default as video4 } from './4.mp4';
 export { default as video12 } from './6.mp4';
 export { default as video7 } from './7.mp4';
 export { default as video8 } from './8.mp4';
+export { default as video16 } from './bigg.mp4';
+export { default as video17 } from './bigSea.mp4';
+export { default as video15 } from './grib.mp4';

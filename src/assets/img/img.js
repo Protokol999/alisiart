@@ -10,3 +10,6 @@ export { default as img2 } from './4.jpg';
 export { default as img7 } from './5.jpg';
 export { default as img8 } from './8.jpg';
 export { default as img4 } from './9.jpg';
+export { default as img16 } from './bigg.png';
+export { default as img17 } from './bigSea.png';
+export { default as img15 } from './grib.png';

@@ -15,11 +15,15 @@
     "shopOriginals": "Shop Original Paintings",
     "shopPrints": "Shop All Prints",
     "aboutTitle": "Meet the Artist",
-    "aboutText": "Learn more"
+    "aboutText": "Learn more",
+    "customTitle": "Looking for custom artwork?",
+    "customSubTitle": "I'm currently taking commissions!",
+    "customButton": "LET’S WORK TOGETHER"
   },
   "originals": {
     "title": "Original Paintings",
     "subtitle": "Small originals",
+    "canvases": "Original canvases",
     "material": "Material",
     "size": "Size",
     "details": "Details",
@@ -150,6 +154,60 @@
       "price": "250 €",
       "shipping": "Shipping and payment details will be arranged via email. Worldwide shipping available.",
       "international": "International orders: buyer is responsible for any additional taxes, tariffs, and customs fees upon import."
+    },
+    "painting15": {
+      "title": "Acrylic on cotton canvas",
+      "description": "Acrylic on cotton canvas",
+      "size": "24 inches (2 cm profile)",
+      "subDescription": "All paintings come safely packaged and ready to hang with a Certificate of Authenticity.",
+      "price": "1000 €",
+      "shipping": "Shipping and payment details will be arranged via email. Worldwide shipping available.",
+      "international": "International orders: buyer is responsible for any additional taxes, tariffs, and customs fees upon import."
+    },
+    "painting16": {
+      "title": "Oil on cotton canvas",
+      "description": "Oil on cotton canvas",
+      "size": "30 × 30 inches (2 cm profile)",
+      "subDescription": "All paintings come safely packaged and ready to hang with a Certificate of Authenticity.",
+      "price": "1100 €",
+      "shipping": "Shipping and payment details will be arranged via email. Worldwide shipping available.",
+      "international": "International orders: buyer is responsible for any additional taxes, tariffs, and customs fees upon import."
+    },
+    "painting17": {
+      "title": "Oil on linen canvas",
+      "description": "Oil on linen canvas",
+      "size": "55 × 39 inches (3 cm profile)",
+      "subDescription": "All paintings come safely packaged and ready to hang with a Certificate of Authenticity.",
+      "price": "2500 €",
+      "shipping": "Shipping and payment details will be arranged via email. Worldwide shipping available.",
+      "international": "International orders: buyer is responsible for any additional taxes, tariffs, and customs fees upon import."
     }
+  },
+  "prints": {
+    "title": "Prints",
+    "description": "Fine art prints coming soon.Stay tuned"
+  },
+  "commissions": {
+    "title": "Commissions",
+    "description": "I accept a limited number of commissions each year.If you would like to request a custom painting, feel free to contact me by email.",
+    "details": "Commissions can include custom seascapes or artworks inspired by a specific place, memory, or atmosphere.",
+    "contact": "For commission inquiries please contact:",
+    "emailButton": "alisiartstudio@gmail.com"
+  },
+  "about": {
+    "title": "About alisi art",
+    "description": "Alina Jecova",
+    "details": "Alina Jecova is a Moldovan artist whose work is rooted in a lifelong love of painting and a quiet sensitivity to beauty, emotion, and atmosphere. Her pieces are created to evoke a sense of pause, warmth, and connection",
+    "intro": "Hi, I’m Alina :) With a background in both fine art and design, I’ve always felt drawn to creating.",
+    "story": "After graduating from art school and earning a Master’s degree in Design, I continued to follow what felt most natural to me – painting. For me, art is a deeply personal language: a way of expressing tenderness, mood, and feeling through color, texture, and form. My work reflects a quiet sensitivity and invites the viewer into a moment of stillness, warmth, and connection.",
+    "social": "I also share my artistic journey through YouTube and social media, where I offer a closer look at my process, inspiration, and the everyday reality of building a creative life.",
+    "instagram": "instagram",
+    "youtube": "youtube"
+  },
+  "contact": {
+    "title": "Contact",
+    "instagram": "instagram",
+    "youtube": "youtube",
+    "email": "alisiartstudio@gmail.com"
   }
 }

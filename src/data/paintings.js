@@ -1,13 +1,16 @@
 import {
+  bigSea,
   picture1,
   picture10,
   picture11,
   picture13,
   picture14,
+  picture15,
   picture16,
   picture2,
   picture3,
   picture4,
+  picture5,
   picture6,
   picture7,
   picture8,
@@ -20,6 +23,9 @@ import {
   img11,
   img13,
   img14,
+  img15,
+  img16,
+  img17,
   img2,
   img3,
   img4,
@@ -36,6 +42,9 @@ import {
   video12,
   video13,
   video14,
+  video15,
+  video16,
+  video17,
   video2,
   video3,
   video4,
@@ -284,5 +293,56 @@ export const painting = [
     instagram: 'https://instagram.com/alisi.art',
     shipping: 'originals.painting14.shipping',
     international: 'originals.painting14.international'
+  },
+  {
+    id: 'painting-15',
+    media: [
+      { type: 'image', src: picture15 },
+      { type: 'video', src: video15 },
+      { type: 'image', src: img15 }
+    ],
+    title: 'originals.painting15.title',
+    description: 'originals.painting15.description',
+    size: 'originals.painting15.size',
+    subDescription: 'originals.painting15.subDescription',
+    price: 'originals.painting15.price',
+    email: 'alisiartstudio@gmail.com', // ← email и instagram не переводим
+    instagram: 'https://instagram.com/alisi.art',
+    shipping: 'originals.painting15.shipping',
+    international: 'originals.painting15.international'
+  },
+  {
+    id: 'painting-16',
+    media: [
+      { type: 'video', src: video16 },
+      { type: 'image', src: picture5 },
+      { type: 'image', src: img16 }
+    ],
+    title: 'originals.painting16.title',
+    description: 'originals.painting16.description',
+    size: 'originals.painting16.size',
+    subDescription: 'originals.painting16.subDescription',
+    price: 'originals.painting16.price',
+    email: 'alisiartstudio@gmail.com',
+    instagram: 'https://instagram.com/alisi.art',
+    shipping: 'originals.painting16.shipping',
+    international: 'originals.painting16.international'
+  },
+  {
+    id: 'painting-17',
+    media: [
+      { type: 'video', src: video17 },
+      { type: 'image', src: bigSea },
+      { type: 'image', src: img17 }
+    ],
+    title: 'originals.painting17.title',
+    description: 'originals.painting17.description',
+    size: 'originals.painting17.size',
+    subDescription: 'originals.painting17.subDescription',
+    price: 'originals.painting17.price',
+    email: 'alisiartstudio@gmail.com', // ← email и instagram не переводим
+    instagram: 'https://instagram.com/alisi.art',
+    shipping: 'originals.painting17.shipping',
+    international: 'originals.painting17.international'
   }
 ];
