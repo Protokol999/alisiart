@@ -2,43 +2,40 @@ import { useEffect, useState } from 'react';
 import './Preloader.scss';
 
 const LETTERS = 'ALISI ART'.split('');
-const MIN_MS = 2400;
+const MIN_MS = 1800; // минимальное время показа
+const MAX_MS = 3200; // максимальное — больше не ждём никогда
 
 export const Preloader = ({ onComplete }) => {
   const [hiding, setHiding] = useState(false);
 
   useEffect(() => {
-    const startTime = Date.now();
+    let finished = false;
 
     const finish = () => {
-      const elapsed = Date.now() - startTime;
-      const wait = Math.max(0, MIN_MS - elapsed);
-      setTimeout(() => {
-        setHiding(true);
-        setTimeout(onComplete, 700);
-      }, wait);
+      if (finished) return;
+      finished = true;
+      setHiding(true);
+      setTimeout(onComplete, 600);
     };
 
-    // Wait for all images in the document to load
-    const checkImages = () => {
-      const imgs = Array.from(document.querySelectorAll('img'));
-      if (imgs.length === 0) { finish(); return; }
+    // Принудительно закрыть через MAX_MS
+    const maxTimer = setTimeout(finish, MAX_MS);
 
-      let remaining = imgs.length;
-      const dec = () => { remaining--; if (remaining === 0) finish(); };
+    // Закрыть после MIN_MS как только загрузится hero-картинка
+    const minTimer = setTimeout(() => {
+      const hero = document.querySelector('.home__hero-bg, .originals__hero-img, img');
+      if (!hero || hero.complete) {
+        finish();
+      } else {
+        hero.addEventListener('load',  finish, { once: true });
+        hero.addEventListener('error', finish, { once: true });
+      }
+    }, MIN_MS);
 
-      imgs.forEach(img => {
-        if (img.complete) dec();
-        else {
-          img.addEventListener('load', dec, { once: true });
-          img.addEventListener('error', dec, { once: true });
-        }
-      });
+    return () => {
+      clearTimeout(maxTimer);
+      clearTimeout(minTimer);
     };
-
-    // Give React one tick to render images into DOM
-    const timer = setTimeout(checkImages, 50);
-    return () => clearTimeout(timer);
   }, [onComplete]);
 
   return (
