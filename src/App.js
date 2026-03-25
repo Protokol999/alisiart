@@ -1,5 +1,7 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+import { HashRouter as BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import { Preloader } from './components/Preloader/Preloader';
 import { Navbar } from './components/Navbar/Navbar';
 import { About } from './pages/About/About';
 import { Commissions } from './pages/Commisions/Commissions';
@@ -8,9 +10,13 @@ import { Home } from './pages/Home/Home';
 import { Originals } from './pages/Originals/Originals';
 import { Paintings } from './pages/Paintings/Paintings';
 import { Prints } from './pages/Prints/Prints';
+
 function App() {
+  const [loading, setLoading] = useState(true);
+
   return (
     <div className='App'>
+      {loading && <Preloader onComplete={() => setLoading(false)} />}
       <BrowserRouter>
         <Navbar />
         <Routes>

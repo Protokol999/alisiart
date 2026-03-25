@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
   padding: 0;
@@ -9,20 +15,15 @@ body {
   overflow-x: hidden;
 }
 
-* {
-  box-sizing: border-box;
-}
+#root { min-height: 100vh; }
 
-#root {
-  min-height: 100vh;
-}
+img, video { max-width: 100%; }
 
-code {
-  font-family:
-    source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
+button, a { -webkit-tap-highlight-color: transparent; }
+
 @font-face {
   font-family: 'Bodoni';
   src: url('./assets/fonts/bodoni/BOD_BLAR.TTF') format('truetype');
   font-weight: 900;
+  font-display: swap;
 }

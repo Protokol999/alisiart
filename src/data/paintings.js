@@ -296,6 +296,7 @@ export const painting = [
   },
   {
     id: 'painting-15',
+    sold: true,
     media: [
       { type: 'image', src: picture15 },
       { type: 'video', src: video15 },
@@ -313,6 +314,7 @@ export const painting = [
   },
   {
     id: 'painting-16',
+    sold: true,
     media: [
       { type: 'video', src: video16 },
       { type: 'image', src: picture5 },
@@ -330,6 +332,7 @@ export const painting = [
   },
   {
     id: 'painting-17',
+    sold: true,
     media: [
       { type: 'video', src: video17 },
       { type: 'image', src: bigSea },
