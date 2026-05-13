@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { GA4React } from 'react-ga4';
 import { HashRouter as BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Preloader } from './components/Preloader/Preloader';
 import { Navbar } from './components/Navbar/Navbar';
+import { Preloader } from './components/Preloader/Preloader';
 import { About } from './pages/About/About';
 import { Commissions } from './pages/Commisions/Commissions';
 import { Contact } from './pages/Contact/Contact';
@@ -13,6 +14,14 @@ import { Prints } from './pages/Prints/Prints';
 
 function App() {
   const [loading, setLoading] = useState(true);
+
+  // Google Analytics инициализация
+  useEffect(() => {
+    const ga = new GA4React({
+      measurementId: 'G-PCTJNBLCJC'
+    });
+    ga.initialize();
+  }, []);
 
   return (
     <div className='App'>
